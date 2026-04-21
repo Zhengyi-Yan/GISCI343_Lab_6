@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "jinja2>=3.1.6",
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.2",
+]

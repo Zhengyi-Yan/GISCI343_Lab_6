@@ -1,6 +1,9 @@
 from shiny import App, ui, render, reactive
 import pandas as pd
 import matplotlib.pyplot as plt
+import ssl
+import certifi
+ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=certifi.where())
 
 # Inline sample data (replace with real data next week)
 suburbs = pd.DataFrame({
